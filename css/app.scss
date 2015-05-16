@@ -19,7 +19,7 @@ html, body {
   font-size: 14px;
   line-height: 1.25em;
   color: $black;
-  background-color: #FCFCFC;
+  background-color: $white;
 }
 
 header {
@@ -32,7 +32,6 @@ header {
       text-decoration: none;
       &.site-title {
         text-align: center;
-        //font-size: 1.25em;
       }
       &.about {
         display: inline-block;
@@ -52,4 +51,5 @@ main {
 footer {
   width: 100%;
   padding: 0px 1em;
+  margin: 1em 0;
 }

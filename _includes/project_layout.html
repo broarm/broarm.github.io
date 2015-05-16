@@ -5,7 +5,16 @@
 	</section>
 </header>
 
+
+
 <section class="project-body">
+
+{% if page.galleryBase %} 
+  {% for galleryitem in page.gallery %}
+    <img src="/assets/galleries/{{ page.galleryBase }}/{{ galleryitem }}">
+  {% endfor %}
+{% endif %}
+
 	<article class="project-content">
 		{{ content }}
 	</article>
