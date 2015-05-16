@@ -1,0 +1,12 @@
+<header class="project-header"
+		style="background-image: url('/assets/headers/{{post.headerimage}}')">
+	<section>
+		<h1>{% if page.title %}{{ page.title }}{% endif %}{% if post.title %}{{ post.title }}{% endif %}</h1>
+	</section>
+</header>
+
+<section class="project-body">
+	<article class="project-content">
+		{{ content }}
+	</article>
+</section>

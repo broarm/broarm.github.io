@@ -1,0 +1,55 @@
+---
+# main style sheet
+---
+@charset "utf-8";
+
+@import "variables";
+@import "bourbon/bourbon";
+@import "typography";
+@import "projectCard";
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: $sans;
+  font-size: 14px;
+  line-height: 1.25em;
+  color: $black;
+  background-color: #FCFCFC;
+}
+
+header {
+  width: 100%;
+  padding: 0px 1em;
+  nav {
+    text-align: center;
+    margin: 1em 0;
+    a {
+      text-decoration: none;
+      &.site-title {
+        text-align: center;
+        //font-size: 1.25em;
+      }
+      &.about {
+        display: inline-block;
+        float: right;
+        font-weight: bold;
+        font-size: 1.25em;
+      }
+    }
+  }
+}
+
+main {
+  width: 100%;
+  padding: 0px 1em;
+}
+
+footer {
+  width: 100%;
+  padding: 0px 1em;
+}
