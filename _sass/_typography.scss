@@ -37,6 +37,9 @@ p {
 a {
   display: inline-block;
   color: $black;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 ul {

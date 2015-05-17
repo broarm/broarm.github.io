@@ -28,6 +28,8 @@ html, body {
 header.site-header {
   width: 100%;
   padding: 0px 1em;
+  max-width: 1050px;
+  margin: auto;
   nav {
     position: relative;
     display: inline-block;
@@ -40,7 +42,7 @@ header.site-header {
         background-size: 57px 20px;
         width: 57px;
         height: 20px;
-        bottom: 0px;
+        bottom: .6em;
         left: 50%;
         margin-left: -28px;
         position: absolute;
@@ -50,14 +52,9 @@ header.site-header {
       }
       &.about {
         float: right;
-        margin-top: 1em;
+        margin: 1em 0 .5em 0;
         font-size: 1.25em;
         font-weight: bold;
-      }
-      &.goBack {
-        float: left;
-        margin-top: 1em;
-        font-size: 1.25em;
       }
     }
   }
@@ -66,10 +63,18 @@ header.site-header {
 main {
   width: 100%;
   padding: 0px 1em;
+  display: inline-block;
+  &.project {
+    max-width: 1050px;
+    margin: auto;
+    display: block;
+  }
 }
 
 footer.site-footer {
   width: 100%;
   padding: 0px 1em;
   margin: 1em 0;
+  max-width: 1050px;
+  margin: auto;
 }
