@@ -16,6 +16,26 @@
     <header>
       <h2>{% if page.title %}{{ page.title }}{% endif %}{% if post.title %}{{ post.title }}{% endif %}</h2>
     </header>
-    <p>{{ content }}</p>
+    {{ content }}
+    <footer>
+      <ul class="meta">
+        <li>
+          <span class="label">Date:</span>
+          <span>{{ page.date | date_to_string }}</span>
+        </li>
+        {% if page.role %}
+        <li>
+          <span class="label">Role:</span>
+          <span>{% for role in page.role %}{{ role }}{% endfor %}</span>
+        </li>
+        {% endif %}
+        {% if page.at %}
+        <li>
+          <span class="label">At:</span>
+          <span>{{ page.at }}</span>
+        </li>
+        {% endif %}
+      </ul>
+    </footer>
   </div>
 </article>

@@ -7,7 +7,7 @@ layout: null
 {% for post in site.posts limit:10 %}
    <url>
       <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
-      <lastmod>{{ post.date | date: '%Y-%M-%d'  }}</lastmod>
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
    </url>
 {% endfor %}
 </urlset> 
