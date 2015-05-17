@@ -29,17 +29,34 @@ header.site-header {
   width: 100%;
   padding: 0px 1em;
   nav {
-    text-align: center;
-    margin: 1em 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
     a {
       text-decoration: none;
       &.site-title {
         text-align: center;
+        background-image: url("/assets/logo_small_zwart.png");
+        background-size: 57px 20px;
+        width: 57px;
+        height: 20px;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -28px;
+        position: absolute;
+        h1 {
+          font-size: 0px;
+        }
       }
       &.about {
-        display: inline-block;
         float: right;
+        margin-top: 1em;
+        font-size: 1.25em;
         font-weight: bold;
+      }
+      &.goBack {
+        float: left;
+        margin-top: 1em;
         font-size: 1.25em;
       }
     }

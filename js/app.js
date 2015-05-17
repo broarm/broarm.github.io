@@ -13,4 +13,5 @@ $(document).ready(function() {
     slidesPerView: 1.5,
     loop: false
   });
+
 });
