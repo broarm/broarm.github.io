@@ -1,21 +1,21 @@
-<header class="project-header"
-		style="background-image: url('/assets/headers/{{post.headerimage}}')">
-	<section>
-		<h1>{% if page.title %}{{ page.title }}{% endif %}{% if post.title %}{{ post.title }}{% endif %}</h1>
-	</section>
-</header>
-
-
-
-<section class="project-body">
-
-{% if page.galleryBase %} 
-  {% for galleryitem in page.gallery %}
-    <img src="/assets/galleries/{{ page.galleryBase }}/{{ galleryitem }}">
-  {% endfor %}
-{% endif %}
-
-	<article class="project-content">
-		{{ content }}
-	</article>
-</section>
+<article class="project-layout">
+  {% if page.galleryBase %} 
+  <div class="gallery">
+    <div class="swiper-wrapper">
+      {% for galleryitem in page.gallery %}
+      <div class="swiper-slide">
+        <img src="/assets/galleries/{{ page.galleryBase }}/{{ galleryitem }}">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% else %}
+    <img src="/assets/headers/{{page.headerimage}}">
+  {% endif %}
+  <div class="project-info">
+    <header>
+      <h2>{% if page.title %}{{ page.title }}{% endif %}{% if post.title %}{{ post.title }}{% endif %}</h2>
+    </header>
+    <p>{{ content }}</p>
+  </div>
+</article>

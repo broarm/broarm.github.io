@@ -5,8 +5,10 @@
 
 @import "variables";
 @import "bourbon/bourbon";
+@import "swiper/swiper";
 @import "typography";
 @import "projectCard";
+@import "projectLayout";
 
 * {
   -moz-box-sizing: border-box;
@@ -22,7 +24,7 @@ html, body {
   background-color: $white;
 }
 
-header {
+header.site-header {
   width: 100%;
   padding: 0px 1em;
   nav {
@@ -46,9 +48,12 @@ header {
 main {
   width: 100%;
   padding: 0px 1em;
+  &.project {
+    overflow-x: hidden;
+  }
 }
 
-footer {
+footer.site-footer {
   width: 100%;
   padding: 0px 1em;
   margin: 1em 0;

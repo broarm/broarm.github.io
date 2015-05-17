@@ -3,7 +3,7 @@ layout: project
 title:  "Wim Crouwel New Alphabet App"
 date:   2015-05-17 19:11:30
 categories: project app
-headerimage: "2015-03-06-test-project.gif"
+headerimage: "2015-05-17-wim-crouwel-new-alphabet-app.jpg"
 byline: "To play or not to play"
 galleryBase: "2015-05-17-wim-crouwel-new-alphabet-app"
 gallery:
