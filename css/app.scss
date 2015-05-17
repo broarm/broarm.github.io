@@ -22,6 +22,7 @@ html, body {
   line-height: 1.25em;
   color: $black;
   background-color: $white;
+  overflow-x: hidden;
 }
 
 header.site-header {
@@ -48,9 +49,6 @@ header.site-header {
 main {
   width: 100%;
   padding: 0px 1em;
-  &.project {
-    overflow-x: hidden;
-  }
 }
 
 footer.site-footer {

@@ -7,6 +7,7 @@ headerimage: "2015-05-17-wim-crouwel-new-alphabet-app.jpg"
 byline: "To play or not to play"
 galleryBase: "2015-05-17-wim-crouwel-new-alphabet-app"
 gallery:
+  - "2015-05-17-wim-crouwel-new-alphabet-app-01.jpg"
   - "first.gif"
   - "second.gif"
   - "last.gif"

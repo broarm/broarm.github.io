@@ -1,15 +1,16 @@
 ---
 # main js file
 ---
-var gallery;
-
 $(document).ready(function() {
-  initSwiper();
-});
 
-function initSwiper() {
-  gallery = new Swiper ('.gallery', {
+  var gallery = new Swiper ('.gallery', {
     spaceBetween: 10,
     loop: false
   });
-}
+
+  var latestProjects = new Swiper ('.latest-projects', {
+    spaceBetween: 14,
+    slidesPerView: 1.5,
+    loop: false
+  });
+});

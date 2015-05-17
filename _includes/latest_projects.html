@@ -1,0 +1,10 @@
+<h2>Latest Projects</h2>
+<div class="latest-projects">
+  <div class="swiper-wrapper">
+    {% for post in site.posts | limit: 3 %}
+    <div class="swiper-slide">
+      {% include project_card.html %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
