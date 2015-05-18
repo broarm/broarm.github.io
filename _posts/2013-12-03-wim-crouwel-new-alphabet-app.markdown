@@ -1,14 +1,15 @@
 ---
-layout: project
-title:  Wim Crouwel New Alphabet App
-date:   2013-12-03 18:30:00
-categories: project app
-headerimage: 2013-12-03-wim-crouwel-new-alphabet-app.jpg
-byline: To play or not to play
-client: Toon Lauwen
-role: Design and Development
-at: Royal Acadamy of Art, The Hague
-galleryBase: 2013-12-03-wim-crouwel-new-alphabet-app
+layout:       project
+title:        Wim Crouwel New Alphabet App
+date:         2013-12-03 18:30:00
+categories:   project app
+headerimage:  2013-12-03-wim-crouwel-new-alphabet-app.jpg
+byline:       To play or not to play
+client:       Toon Lauwen
+role:         Design and Development
+at:           Royal Acadamy of Art, The Hague
+importance:   large
+galleryBase:  2013-12-03-wim-crouwel-new-alphabet-app
 gallery:
   - 2013-12-03-wim-crouwel-new-alphabet-app-01.jpg
   - first.gif

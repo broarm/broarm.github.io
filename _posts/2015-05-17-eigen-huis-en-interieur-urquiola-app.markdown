@@ -8,6 +8,7 @@ byline:       To the stars and beond
 role:         development
 client:       Toon Lauwen
 at:           Broarm
+importance:   medium
 ---
 'EH&i Live presents Patricia Urquiola' is het eerste digitale magazine dat Eigen Huis & Interieur speciaal voor de iPad ontwikkelde.
 

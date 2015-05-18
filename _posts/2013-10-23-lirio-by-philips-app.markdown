@@ -8,6 +8,7 @@ byline:       To the stars and beond
 role:         development
 client:       Toon Lauwen
 at:           Broarm
+importance:   medium
 ---
 Met een iPad magazine achter een eigen logo, claimt Lirio zijn eigen, herkenbare plek op het openingsscherm van een iPad. Eenmaal aangeklikt, treedt de consument binnen in het eigen domein van Lirio. Ipad magazines met rich media (dus géén verrijkte pdf) versterken de emotionele ervaring door gebruik te maken van filmpjes, geluid, muziek, animatie.
 
