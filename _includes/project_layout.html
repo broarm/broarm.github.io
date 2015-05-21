@@ -4,7 +4,8 @@
     <div class="swiper-wrapper">
       {% for galleryitem in page.gallery %}
       <div class="swiper-slide">
-        <img src="/assets/galleries/{{ page.galleryBase }}/{{ galleryitem }}">
+        <img data-src="/assets/galleries/{{ page.galleryBase }}/{{ galleryitem }}" class="swiper-lazy">
+        <div class="swiper-lazy-preloader"></div>
       </div>
       {% endfor %}
     </div>

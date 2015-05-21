@@ -5,14 +5,22 @@ var latestProjects, gallery, msnry, masonryContainer, masonryActive, imgLoaded;
 
 $(document).ready(function() {
   
+  setLazyLoaderHeight();
+
   gallery = new Swiper ('.gallery', {
     spaceBetween: 10,
+    preloadImages: false,
+    lazyLoading: true,
+    lazyLoadingInPrevNext: true,
+    setWrapperSize: true,
     loop: false
   });
 
   latestProjects = new Swiper ('.latest-projects', {
     spaceBetween: 14,
     slidesPerView: 1.5,
+    preloadImages: false,
+    lazyLoading: true,
     loop: false
   });
 
@@ -20,20 +28,25 @@ $(document).ready(function() {
   imgLoaded = false;
   masonryContainer = $('main.index');
   masonryContainer.imagesLoaded( function() {
-    console.log('Images loaded!');
     imgLoaded = true;
     setUpMasonery();
     msnry = masonryContainer.data('masonry');
   });
   
-
   resizeLatestProjects();
-  $(window).on('resize', resizeLatestProjects);
-  $(window).on('resize', setUpMasonery);
-  $(window).on('resize', destroyMasonery);
+  $(window).on('resize', function() {
+    resizeLatestProjects();
+    setUpMasonery();
+    destroyMasonery();
+  });
 
 });
 
+
+/**
+ *  Calculate how many slides to show in the latest project section
+ *  based on window width.
+ */
 function resizeLatestProjects() {
   if (latestProjects.container.length) {
     var width = $(window).width();
@@ -62,10 +75,20 @@ function resizeLatestProjects() {
   }
 }
 
+
+function setLazyLoaderHeight() {
+  var width = $('.gallery').width();
+  var height = Math.ceil( (width / 16) * 9 );
+  $('.gallery').find('.swiper-slide').css('height', height);
+}
+
+/**
+ *  Set up Masonery when all images are loaded and if not alreddy set up 
+ *  or in the mobile screen size threshold.
+ */
 function setUpMasonery() {
   var width = $(window).width();
   if ( width > 599 && !masonryActive && imgLoaded ) {
-    console.log('ENABLE masonry');
     masonryContainer.masonry({
       columnWidth: 200,
       gutter: 0,
@@ -75,10 +98,13 @@ function setUpMasonery() {
   }
 }
 
+
+/**
+ *  Destroy masonery when transitioning from a lare screen to a small screen.
+ */
 function destroyMasonery() {
   var width = $(window).width();
   if ( width < 599 && masonryActive ) {
-    console.log('DESTROY masonry');
     msnry.destroy();
     masonryActive = false;
   }
