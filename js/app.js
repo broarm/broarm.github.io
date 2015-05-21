@@ -11,7 +11,7 @@ $(document).ready(function() {
     spaceBetween: 10,
     preloadImages: false,
     lazyLoading: true,
-    lazyLoadingInPrevNext: true,
+    lazyLoadingInPrevNext: false,
     setWrapperSize: true,
     loop: false
   });
