@@ -35,6 +35,7 @@ $(document).ready(function() {
   
   resizeLatestProjects();
   $(window).on('resize', function() {
+    setLazyLoaderHeight();
     resizeLatestProjects();
     setUpMasonery();
     destroyMasonery();
