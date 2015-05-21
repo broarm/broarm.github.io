@@ -44,6 +44,7 @@
   }
 
   .project-info {
+    max-width: 630px;
     header {
       display: inline-block;
       width: 100%;
@@ -51,9 +52,6 @@
         display: inline-block;
         margin: 1em 0 0 0;
       }
-    }
-    p {
-      max-width: 630px;
     }
   }
 }

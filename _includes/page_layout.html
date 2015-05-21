@@ -1,0 +1,11 @@
+<article class="page-layout">
+  {% if page.headerimage %} 
+    <img src="/assets/headers/{{page.headerimage}}">
+  {% endif %}
+  <div class="page-content">
+    <header>
+      <h2>{% if page.title %}{{ page.title }}{% endif %}{% if post.title %}{{ post.title }}{% endif %}</h2>
+    </header>
+    {{ content }}
+  </div>
+</article>

@@ -1,11 +1,12 @@
 <header class="site-header">
 
   <nav>
-
     <a class="site-title" title="Go Home" href="/"><h1>{{ site.title }}</h1></a>
-
-    <a class="about" title="About Broarm" href="#about">?</a>
-
+    {% if page.url == '/about/' %}
+      <a class="about" title="Back Home" href="/">!</a>
+    {% else %}
+      <a class="about" title="About Broarm" href="/about">?</a>
+    {% endif %}
   </nav>
 
 </header>
