@@ -11,9 +11,10 @@ importance:   large
 galleryBase:  2013-12-03-wim-crouwel-new-alphabet-app
 gallery:
   - 2013-12-03-wim-crouwel-new-alphabet-app-01.jpg
-  - first.gif
-  - second.gif
-  - last.gif
+  - wcna-m.gif
+  - wcna-wrong.gif
+  - wcna-achievement.gif
+  - wcna-game-over.gif
 ---
 
 The idea to create an application for design icon Wim Crouwel, started with Toon Lauwen and Ed Annink (1956 – 2012). The purpose of the app was to preserve our Dutch Design heritage, starting with the iconic [New Alphabet][newAlphabet]{:target="_blank"} by Wim Crouwel.

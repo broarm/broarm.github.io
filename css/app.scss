@@ -43,7 +43,7 @@ header.site-header {
         background-size: 57px 20px;
         width: 57px;
         height: 20px;
-        bottom: .6em;
+        bottom: 5px;
         left: 50%;
         margin-left: -28px;
         position: absolute;
@@ -53,9 +53,19 @@ header.site-header {
       }
       &.about {
         float: right;
-        margin: 1em 0 .5em 0;
-        font-size: 1.25em;
-        font-weight: bold;
+        margin: 21px 0 7px 0;
+        width: 20px;
+        line-height: 14px;
+        text-align: center;
+        //margin: 1em 0 .5em 0;
+        &.cross {
+          font-size: 1.75em;
+          font-weight: normal;
+        }
+        &.questionmark {
+          font-size: 1.25em;
+          font-weight: bold;
+        }
       }
     }
   }
