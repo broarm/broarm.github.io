@@ -3,7 +3,7 @@ layout:         project
 title:          Wim Crouwel New Alphabet App
 meta:
   image:        2013-12-03-wim-crouwel-new-alphabet-app.jpg
-  description:  Placing the player in the shoes of Wim Crouwel, the player has to make the same design decisions while constructing the alphabet by placing blocks on the 5 by 9 grid. The New Alphabet was, for its age, an revolutionary take on type design. Presented in 1967, the font was made for the newest technologies of it's time. Embracing the restrictions of the cathode-ray tube, that was only capable of making horizontal and vertical lines.
+  description:  Placing the player in the shoes of Wim Crouwel, the player has to make the same design decisions while constructing the alphabet by placing blocks on the 5 by 9 grid.
   title:        The Wim Crouwel New Alphabet App
 date:           2013-12-03 18:30:00
 categories:     project app
