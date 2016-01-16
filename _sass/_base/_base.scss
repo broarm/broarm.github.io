@@ -1,0 +1,131 @@
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	font-family: $sans;
+	font-size: 14px;
+	line-height: 1.25em;
+	color: $black;
+	background-color: $offWhite;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: $sans;
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 1.25em;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 1.25em;
+	margin: 1em 0;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	display: inline-block;
+	color: $black;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+ul {
+	list-style: none;
+	margin: .5em 0;
+	padding: 0;
+	li {
+
+	}
+}
+
+header.site-header {
+	width: 100%;
+	padding: 0px 1em;
+	max-width: 1050px;
+	margin: auto;
+	nav {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		a {
+			text-decoration: none;
+			&.site-title {
+				text-align: center;
+				background-image: url("/assets/logo_small_zwart.png");
+				background-size: 57px 20px;
+				width: 57px;
+				height: 20px;
+				bottom: 5px;
+				left: 50%;
+				margin-left: -28px;
+				position: absolute;
+				h1 {
+					font-size: 0px;
+				}
+			}
+			&.about {
+				float: right;
+				margin: 21px 0 7px 0;
+				width: 20px;
+				line-height: 14px;
+				text-align: center;
+				//margin: 1em 0 .5em 0;
+				&.cross {
+					font-size: 1.75em;
+					font-weight: normal;
+				}
+				&.questionmark {
+					font-size: 1.25em;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+main {
+	width: 100%;
+	padding: 0px 1em;
+	display: inline-block;
+	&.project, &.page {
+		max-width: 1050px;
+		margin: auto;
+		display: block;
+	}
+}
+
+footer.site-footer {
+	width: 100%;
+	padding: 0px 1em;
+	margin: 1em 0;
+	max-width: 1050px;
+	margin: auto;
+}

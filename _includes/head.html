@@ -9,9 +9,9 @@
   <!-- META Facebook Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <meta property="og:title" content="{% if page.meta.title %}{{ page.meta.title }}{% else %}{{ page.title }}{% endif %}">
+  <meta property="og:title" content="{% if page.meta.title %}{{ page.meta.title }}{% else if page.title != blank %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:image" content="{{ site.url }}/assets/headers/{% if page.meta.image %}{{ page.meta.image }}{% else %}{{ page.headerimage }}{% endif %}">
-  <meta property="og:description" content="{% if page.meta.description %}{{ page.meta.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+  <meta property="og:description" content="{% if page.meta.description %}{{ page.meta.description }}{% else if page.content %}test{% else %}{{ site.description }}{% endif %}">
   <meta property="og:article:author" content="Bram de Leeuw">
 
   <!-- META Twitter card -->
