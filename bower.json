@@ -1,0 +1,33 @@
+{
+  "name": "broarm",
+  "homepage": "http://www.broarm.nl/",
+  "authors": [
+    "Bram de Leeuw <bram-de-leeuw@hotmail.com>"
+  ],
+  "description": "personal portfolio of Bram de Leeuw",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "broarm",
+    "bram",
+    "de",
+    "leeuw",
+    "portfolio"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "imagesloaded": "~4.1.0",
+    "jquery-focuspoint": "~1.1.1",
+    "Swiper": "swiper#~3.3.0",
+    "jquery": "~2.2.0"
+  }
+}
