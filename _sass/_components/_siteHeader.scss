@@ -1,0 +1,49 @@
+.site-header {
+	position: absolute;
+}
+
+.site-header-person-information {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	z-index: 999;
+	color: $white;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	letter-spacing: 0.03em;
+	text-shadow: 0px 0px 15px rgba(0,0,0,0.25);
+	width: 200px;
+	-webkit-transition: color .3s ease;
+	transition: color .3s ease;
+	address {
+		font-style: normal;
+	}
+	a {
+		color: $white;
+		&:hover {
+			color: darken($white, 10%);
+		}
+	}
+
+	&.light {
+		color: $white;
+		a {
+			color: $white;
+			&:hover {
+				color: darken($white, 10%);
+			}
+		}
+	}
+
+	&.dark {
+		color: $black;
+		a {
+			color: $black;
+			&:hover {
+				color: lighten($black, 10%);
+			}
+		}
+	}
+}

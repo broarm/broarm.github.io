@@ -1,5 +1,5 @@
-_0_IGNORE
-_site
+_0_IGNORE/
+_site/
 .sass-cache/
 .idea/
 .DS_Store

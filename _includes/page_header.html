@@ -1,0 +1,26 @@
+<header class="site-cover">
+	<div class="cover swiper-container">
+		<div class="swiper-wrapper">
+			{% for post in site.posts %}
+				<div class="swiper-slide"
+				     data-focus-x="{{ post.header.focusX }}"
+				     data-focus-y="{{ post.header.focusY }}"
+				     data-image-w="{{ post.header.width }}"
+				     data-image-h="{{ post.header.height }}"
+				     data-image-color="{{ post.header.color }}"
+				     title="{{ post.title }}">
+					<img data-src="{{ post.header.path }}"
+					     alt="{{ post.title }}"
+					     title="{{ post.title }}"
+					     width="{{ post.header.width }}"
+               height="{{ post.header.height }}"
+               class="swiper-lazy">
+					<div class="swiper-lazy-preloader"></div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="swiper-button-prev tooltip"></div>
+		<div class="swiper-button-next tooltip"></div>
+		<div class="read-more tooltip"></div>
+	</div>
+</header>

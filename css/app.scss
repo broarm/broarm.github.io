@@ -2,17 +2,15 @@
 # main style sheet
 ---
 @charset "utf-8";
+@import "_utils/reset";
 
+// variables
 @import "variables";
-@import "bourbon/bourbon";
-@import "swiper/swiper";
 
 // Base
-@import "_base/base";
+@import "base";
 
-// Layout
-@import "_layout/pageLayout";
-@import "_layout/projectLayout";
-
-// Modules
-@import "_modules/projectCard";
+// Components
+@import "_components/swiper";
+@import "_components/siteHeader";
+@import "_components/cover";

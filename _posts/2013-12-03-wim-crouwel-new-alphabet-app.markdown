@@ -1,24 +1,20 @@
 ---
 layout:         project
 title:          Wim Crouwel New Alphabet App
-meta:
-  image:        2013-12-03-wim-crouwel-new-alphabet-app-socialmedia.jpg
-  description:  Placing the player in the shoes of Wim Crouwel, the player has to make the same design decisions while constructing the alphabet by placing blocks on the 5 by 9 grid.
-  title:        The Wim Crouwel New Alphabet App
 date:           2013-12-03 18:30:00
-categories:     project app
-headerimage:    2013-12-03-wim-crouwel-new-alphabet-app.jpg
+meta:
+  image:        wim-crouwel-new-alphabet-app-socialmedia.jpg
+  title:        The Wim Crouwel New Alphabet App
+  description:  Placing the player in the shoes of Wim Crouwel, the player has to make the same design decisions while constructing the alphabet by placing blocks on the 5 by 9 grid.
+role:           Design, Development
 client:         Toon Lauwen
-role:           Design and Development
-at:             Royal Acadamy of Art, The Hague
-importance:     large
-galleryBase:    2013-12-03-wim-crouwel-new-alphabet-app
-gallery:
-  - 2013-12-03-wim-crouwel-new-alphabet-app-01.jpg
-  - wcna-m.gif
-  - wcna-wrong.gif
-  - wcna-achievement.gif
-  - wcna-game-over.gif
+header:
+  path:  				/assets/posts/wim-crouwel-new-alphabet-app/wim-crouwel-new-alphabet-app.jpg
+  width:				1600
+  height:				1200
+  focusX:				-0.25
+  focusY:				0
+  color:				dark
 ---
 
 The idea to create an application for design icon Wim Crouwel, started with Toon Lauwen and Ed Annink (1956 – 2012). The purpose of the app was to preserve our Dutch Design heritage, starting with the iconic [New Alphabet][newAlphabet]{:target="_blank"} by Wim Crouwel.
