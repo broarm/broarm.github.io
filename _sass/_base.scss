@@ -10,6 +10,8 @@ body {
 	letter-spacing: 0.03em;
 	color: $black;
 	background-color: $white;
+	font-family: $sans;
+	text-rendering: optimizeLegibility;
 }
 
 a {
@@ -31,4 +33,6 @@ h4,
 h5,
 h6 {
 	font-size: 2rem;
+	text-align: center;
+	font-weight: 500;
 }

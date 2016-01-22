@@ -41,11 +41,13 @@
 }
 
 .read-more,
-.swiper-button-next,
-.swiper-button-prev {
+.gallery-button-next,
+.gallery-button-prev,
+.cover-button-next,
+.cover-button-prev {
 	position: absolute;
 	z-index: 999;
-	color: $white;
+	color: #FFFFFF;
 	text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 	background-image: none;
 	font-size: 2rem;
@@ -56,6 +58,7 @@
 	font-family: Arial, sans-serif;
 	margin: -20px 0 0 0;
 	padding: 20px;
+	cursor: pointer;
 	&:after {
 		display: inline-block;
 		-webkit-transition: transform .3s ease;
@@ -63,7 +66,9 @@
 	}
 }
 
-.swiper-button-next {
+.gallery-button-next,
+.cover-button-next {
+	top: 50%;
 	right: 0;
 	&:after {
 		content: "\02192";
@@ -73,7 +78,9 @@
 	}
 }
 
-.swiper-button-prev {
+.gallery-button-prev,
+.cover-button-prev {
+	top: 50%;
 	left: 0;
 	&:after {
 		content: "\02190";
