@@ -6,6 +6,8 @@ baseurl: ""
 url: "http://broarm.nl"
 twitter_username: bramdeleeuw
 github_username:  TheBnl
+permalink: /:title/
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
 
 # Build settings
 markdown: kramdown

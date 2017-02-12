@@ -12,6 +12,9 @@ body {
 	background-color: $white;
 	font-family: $sans;
 	text-rendering: optimizeLegibility;
+	@media #{$mobile-up} {
+		font-size: 18px;
+	}
 }
 
 a {
@@ -21,6 +24,34 @@ a {
 	&:hover {
 		color: lighten($black, 10%);
 	}
+}
+
+.project a {
+	color: $black;
+	-webkit-transition: color .3s ease;
+	transition: color .3s ease;
+	text-decoration: none;
+	text-shadow: 0.05em 0 0 $white,0.1em 0 0 $white,0.15em 0 0 $white,-0.05em 0 0 $white,-0.1em 0 0 $white,-0.15em 0 0 $white,0 0.05em 0 $white,0 0.1em 0 $white,0 -0.05em 0 $white,0 -0.1em 0 $white;
+	background-image: -webkit-linear-gradient(gray, gray);
+	background-image: -moz-linear-gradient(gray, gray);
+	background-image: -ms-linear-gradient(gray, gray);
+	background-image: linear-gradient(gray, gray);
+	background-position: 0 1.15em;
+	background-size: 1px 1px;
+	background-repeat: repeat-x;
+	&:hover {
+		color: lighten($black, 20%);
+		background-image: -webkit-linear-gradient(#ff6d5b, #ff6d5b);
+		background-image: -moz-linear-gradient(#ff6d5b, #ff6d5b);
+		background-image: -ms-linear-gradient(#ff6d5b, #ff6d5b);
+		background-image: linear-gradient(#ff6d5b, #ff6d5b);
+	}
+}
+
+::selection {
+	background: rgba(255,109,91,0.99) none;
+	text-shadow: none;
+	color: #fff;
 }
 
 p {

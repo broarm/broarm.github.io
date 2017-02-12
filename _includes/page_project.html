@@ -2,8 +2,10 @@
 	<article class="project-content">
 		<!-- Article Header -->
 		<header class="project-content-title">
-			<h2>Title</h2>
+			<h2>{{ page.title }}</h2>
 		</header>
+
+		{{ page.content }}
 
 		<!-- Text Section -->
 		<section class="project-content-text">
@@ -64,19 +66,32 @@
 			<ul class="project-content-meta-list">
 				<li class="project-content-meta-list-item" id="meta-year">
 					<span class="project-content-meta-list-item-key">Year:</span>
-					<span class="project-content-meta-list-item-value">2015</span>
+					<span class="project-content-meta-list-item-value">{{ page.date | date: '%Y' }}</span>
 				</li>
+				{% if page.client %}
+				<li class="project-content-meta-list-item" id="meta-client">
+					<span class="project-content-meta-list-item-key">Client:</span>
+					<span class="project-content-meta-list-item-value">{{ page.client }}</span>
+				</li>
+				{% endif %}
+				{% if page.role %}
 				<li class="project-content-meta-list-item" id="meta-role">
 					<span class="project-content-meta-list-item-key">Role:</span>
-					<span class="project-content-meta-list-item-value">Design, Development</span>
+					<span class="project-content-meta-list-item-value">{{ page.role }}</span>
 				</li>
+				{% endif %}
+				{% if page.credits %}
 				<li class="project-content-meta-list-item" id="meta-credits">
 					<span class="project-content-meta-list-item-key">Credits:</span>
-					<span class="project-content-meta-list-item-value">Made in collaboration with Sepus Noordmans, Orphé Tan-A-Kiam, Tomas Laar, Sara Risvåg, and Alyar Aynetchi.</span>
+					<span class="project-content-meta-list-item-value">{{ page.credits }}</span>
 				</li>
+				{% endif %}
 				<li class="project-content-meta-list-item" id="meta-share">
 					<span class="project-content-meta-list-item-key">Share:</span>
-					<span class="project-content-meta-list-item-value">Facebook, Twitter</span>
+					<span class="project-content-meta-list-item-value">
+						<a href="#fb" title="Share {{ page.title }} on Facebook">Facebook</a>,
+						<a href="#tw" title="Share {{ page.title }} on Twitter">Twitter</a>
+					</span>
 				</li>
 			</ul>
 		</footer>
